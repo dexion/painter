@@ -1,0 +1,250 @@
+.outline-image {
+    cursor: pointer;
+    border: 1.5px solid transparent;
+    opacity: 1;
+    transition: all 0.2s linear;
+}
+
+.outline-image:hover {
+    opacity: 0.5;
+}
+
+.outline-image-selected {
+    border: 1.5px solid #fd7267;
+}
+
+.first-step-text {
+    font-family: "Gilroy-Light";
+}
+
+.first-step-select {
+    transition: all 0.2s linear;
+}
+
+.first-step-select.error {
+    color: #fd7267;
+}
+
+.icon-in-circle img.width-10 {
+    width: 10px;
+    padding-top: 14px;
+}
+
+.icon-in-circle {
+    border: 1px solid #ececec;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+    transition: all 0.3s linear;
+}
+
+.icon-in-circle:hover {
+    border-color: #fd7267;
+}
+
+.icon-in-circle img {
+    width: 14px;
+    padding-top: 13px;
+}
+
+.prev-step {
+    font-size: 0.6875em;
+    text-decoration: none;
+}
+
+.outline-canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.painter-controls {
+    -ms-flex: 0 0 500px;
+    flex: 0 0 500px;
+    max-width: 500px;
+    padding: 0 15px;
+}
+
+.painter-plot {
+    position: relative;
+    -ms-flex: 0 0 calc(100% - 500px);
+    flex: 0 0 calc(100% - 500px);
+    max-width: calc(100% - 500px);
+    cursor: none;
+    height: 500px;
+}
+
+.painter-canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    box-shadow: 0px 3px 20px 1px rgba(117, 113, 113, 0.08);
+}
+
+.painter-button {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+.painter-title {
+    font-size: 0.8125em;
+    font-family: "Gilroy-Regular";
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.painter-color-button.is-active .icon-in-circle {
+    background: #fd7267;
+    transition: all 0.2s linear;
+}
+
+.painter-color-button.is-active .icon-in-circle path {
+    stroke: #fff;
+    fill: #fff;
+    transition: all 0.2s linear;
+}
+
+.painter-control .painter-color {
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: top;
+    transition: all 0.2s linear;
+}
+
+.painter-control .painter-color.is-active {
+    border-color: #ececec;
+    cursor: default;
+}
+
+.painter-control .painter-color span {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border-radius: 100%;
+    display: block;
+}
+
+.painter-control .painter-size.is-active {
+    border-color: #ececec;
+    cursor: default;
+}
+
+.painter-control .painter-size {
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 100%;
+    display: inline-block;
+    transition: all 0.2s linear;
+}
+
+.painter-control .painter-size span {
+    cursor: pointer;
+    border-radius: 100%;
+    display: block;
+    transition: all 0.2s linear;
+}
+
+.painter-control {
+    position: relative;
+}
+
+.group-range .range-value {
+    display: inline-block;
+    font-size: 0.8125em;
+    font-family: "Gilroy-Regular";
+    margin-right: 15px;
+    position: relative;
+    top: -11px;
+    width: 20px;
+}
+
+.painter-control .brush-preview {
+    border: 1px solid #463b3b;
+    background: #fcfcfc;
+    display: block;
+}
+
+.group-range input[type='range'] {
+    width: 250px;
+    height: 2px;
+    -webkit-appearance: none;
+    background-color: #afafaf;
+    position: relative;
+    top: -16px;
+}
+
+.group-range input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #575757;
+    cursor: pointer;
+}
+
+.group-range input[type="range"]::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.group-range input[type="range"]::-moz-range-progress {
+    background-color: #575757;
+}
+
+.group-range input[type="range"]::-moz-range-track {
+    background-color: #afafaf;
+}
+
+.group-range input[type="range"]::-ms-fill-lower {
+    background-color: #575757;
+}
+
+.group-range input[type="range"]::-ms-fill-upper {
+    background-color: #afafaf;
+}
+
+.painter-cursor {
+    position: absolute;
+    border-radius: 100%;
+    z-index: 2;
+    border: 1px solid #000;
+}
+
+.painter-control .painter-size.painter-size-opacity {
+    border: 1px solid #ececec;
+    padding: 0;
+    margin-right: 15px;
+}
+
+.result-image {
+    width: 100%;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.titleH3 {
+    text-decoration: none;
+    display: block;
+}
