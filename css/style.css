@@ -194,7 +194,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #fafafa;
+    /*background-color: #fafafa;*/
     min-width: 1280px;
 }
 
@@ -206,7 +206,7 @@ body {
     overflow: hidden;
     display: none;
     text-align: center;
-    background-color: #fafafa;
+    /*background-color: #fafafa;*/
     top: 0;
     overflow: hidden;
 }
