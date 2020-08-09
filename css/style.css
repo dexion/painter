@@ -147,14 +147,14 @@
 .titleH1 {
     font-size: 4.375em;
     color: #000;
-    font-family: "Vyborg-Bold";    
+    font-family: "Old-bold";    
     margin: 0;
     line-height: 0.9em;
 }
 .titleH2 {
     font-size: 2.1875em;
     color: #000;
-    font-family: "Vyborg-Bold";    
+    font-family: "Old-bold";    
     margin: 0;
 }
 .titleH3 {
@@ -171,38 +171,17 @@
 }
 
 @font-face {
-  font-family: "Vyborg-Bold";
-  src: url("./fonts/Vyborg-Bold.eot");
-  src: url("./fonts/Vyborg-Bold.eot?#iefix") format("embedded-opentype"),
-    url("./fonts/Vyborg-Bold.otf") format("opentype"),
-    url("./fonts/Vyborg-Bold.svg") format("svg"),
-    url("./fonts/Vyborg-Bold.ttf") format("truetype"),
-    url("./fonts/Vyborg-Bold.woff") format("woff"),
-    url("./fonts/Vyborg-Bold.woff2") format("woff2");
+  font-family: "Old-bold";
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy-Regular";
-  src: url("./fonts/GILROY-REGULAR.eot"); /* IE9 Compat Modes */
-  src: url("./fonts/GILROY-REGULAR.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("./fonts/GILROY-REGULAR.otf") format("opentype"), /* Open Type Font */
-    url("./fonts/GILROY-REGULAR.svg") format("svg"), /* Legacy iOS */
-    url("./fonts/GILROY-REGULAR.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("./fonts/GILROY-REGULAR.woff") format("woff"), /* Modern Browsers */
-    url("./fonts/GILROY-REGULAR.woff2") format("woff2"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy-Light";
-  src: url("./fonts/Gilroy-Light.eot"); /* IE9 Compat Modes */
-  src: url("./fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("./fonts/Gilroy-Light.otf") format("opentype"), /* Open Type Font */
-    url("./fonts/Gilroy-Light.svg") format("svg"), /* Legacy iOS */
-    url("./fonts/Gilroy-Light.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("./fonts/Gilroy-Light.woff") format("woff"), /* Modern Browsers */
-    url("./fonts/Gilroy-Light.woff2") format("woff2"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
@@ -243,7 +222,7 @@ body {
     width: 75px;
 }
 .rotate-text-big {
-    font-family: "Vyborg-Bold";  
+    font-family: "Old-bold";  
     font-size: 1.5em;  
 }
 .rotate-text-small {
