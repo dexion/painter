@@ -10,7 +10,7 @@
 }
 
 .outline-image-selected {
-    border: 1.5px solid #fd7267;
+    border: 1.5px solid #3575f1;
 }
 
 .first-step-text {
@@ -22,7 +22,7 @@
 }
 
 .first-step-select.error {
-    color: #fd7267;
+    color: #3575f1;
 }
 
 .icon-in-circle img.width-10 {
@@ -42,7 +42,7 @@
 }
 
 .icon-in-circle:hover {
-    border-color: #fd7267;
+    border-color: #3575f1;
 }
 
 .icon-in-circle img {
@@ -55,6 +55,10 @@
     text-decoration: none;
 }
 
+.centered {
+    text-align: center;
+}
+
 .outline-canvas {
     width: 100%;
     height: 100%;
@@ -64,18 +68,22 @@
     z-index: 1;
 }
 
+.painter {
+    display: flex;
+}
+
 .painter-controls {
     -ms-flex: 0 0 500px;
     flex: 0 0 500px;
-    max-width: 500px;
+    max-width: 200px;
     padding: 0 15px;
 }
 
 .painter-plot {
     position: relative;
-    -ms-flex: 0 0 calc(100% - 500px);
-    flex: 0 0 calc(100% - 500px);
-    max-width: calc(100% - 500px);
+    -ms-flex: 0 0 calc(100% - 300px);
+    flex: 0 0 calc(100% - 300px);
+    max-width: calc(100% - 300px);
     cursor: none;
     height: 500px;
 }
@@ -104,7 +112,7 @@
 }
 
 .painter-color-button.is-active .icon-in-circle {
-    background: #fd7267;
+    background: #3575f1;
     transition: all 0.2s linear;
 }
 
@@ -115,8 +123,6 @@
 }
 
 .painter-control .painter-color {
-    border: 1px solid transparent;
-    padding: 10px;
     border-radius: 100%;
     display: inline-block;
     vertical-align: top;
@@ -130,9 +136,8 @@
 
 .painter-control .painter-color span {
     width: 24px;
-    height: 24px;
+    height: 36px;
     cursor: pointer;
-    border-radius: 100%;
     display: block;
 }
 
@@ -158,6 +163,9 @@
 
 .painter-control {
     position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
 .group-range .range-value {
@@ -174,6 +182,15 @@
     border: 1px solid #463b3b;
     background: #fcfcfc;
     display: block;
+}
+
+.painter-colors {
+    display: flex;
+    align-items: flex-start;
+    -ms-flex: 0 0 70px;
+    flex: 0 0 70px;
+    max-width: 200px;
+    justify-content: space-evenly;
 }
 
 .group-range input[type='range'] {

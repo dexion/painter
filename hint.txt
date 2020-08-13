@@ -19,3 +19,6 @@
 <div class="iframe-container">
   <iframe src="https://source/painter/"></iframe>
 </div>
+
+
+python -m SimpleHTTPServer 55555

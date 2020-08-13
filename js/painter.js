@@ -167,9 +167,9 @@ $(document).ready(function() {
       }     
 
       if (this.width > this.minWidth) {
-        coord.x = coord.x - (this.width - this.minWidth)/2 - 500;
+        coord.x = coord.x - (this.width - this.minWidth)/2 - 215;
       } else {
-        coord.x = coord.x - 500;
+        coord.x = coord.x - 215;
       }
 
       coord.y = coord.y - 142;

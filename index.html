@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="" name="description">
     <meta property="og:title" content="">
-    
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./css/style.css">
@@ -30,7 +29,7 @@
         <div class="container first-step pt-50">
             <div class="row">
                 <div class="col-2">
-                    <p class="titleH2">Шаг 1</p>
+                    <!-- <p class="titleH2">Шаг 1</p> -->
                 </div>
                 <div class="col-8">
                     <p class="text first-step-select">Выберите иллюстрацию</p>
@@ -63,139 +62,63 @@
         <div class="container second-step hidden">
             <div class="row py-50">
                 <div class="col-2">
-                    <p class="titleH2">Шаг 2</p>
+                    <a href="javascript:;" class="button-inverse prev-step link">
+                        Назад
+                    </a>
                 </div>
                 <div class="col-8">
-                    <a href="javascript:;" class="prev-step link">
-                        <span class="icon-in-circle">
-                            <img src="./img/img.svg" alt="">
-                        </span>
-                        Заменить изображение
-                    </a>
+                    <p class="titleH2 centered">Создай свой стиль</p>
                 </div>
                 <div class="col-2 text-right">
                     <button class="button go-third-step" data-save="">Готово</button>
                 </div>
             </div>
-            <div class="row painter">
+            <div class="painter">
                 <div class="painter-controls">
-                    <div class="painter-action">
-                        <button class="painter-button link" data-clear="">
-                            <span class="icon-in-circle">
-                                <img src="./img/close.svg" class="width-10" alt="">
-                            </span>
-                            Очистить
-                        </button>
-                        <button class="painter-button painter-color painter-color-button link ml-15" data-color="#fafafa">
-                            <span class="icon-in-circle">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59.71 50" width="14px" height="24px" style="padding-top: 10px;">
-                                    <path d="M55.76,27.69a6.61,6.61,0,0,0,0-9.33L39.34,1.93a6.61,6.61,0,0,0-9.33,0L13.46,18.47,39.22,44.23Zm0,0"></path>
-                                    <path d="M58,46.5H36.54L11,20.94,1.93,30a6.61,6.61,0,0,0,0,9.33L12.08,49.49a1.75,1.75,0,0,0,1.24.51H58a1.75,1.75,0,1,0,0-3.5Zm0,0"></path>
-                                </svg>
-                            </span>
-                            Ластик
-                        </button>
-                    </div>
-                    <div class="painter-title">
-                        Выберите цвет кисти
-                    </div>
-                    <div class="painter-control">
-                        <div class="painter-color is-active" data-color="#15914b">
-                            <span style="background: #15914b;"></span>
-                        </div>
-                        <div class="painter-color " data-color="#588fe9">
-                            <span style="background: #588fe9;"></span>
-                        </div>
-                        <div class="painter-color " data-color="#6e154e">
-                            <span style="background: #6e154e;"></span>
-                        </div>
-                        <div class="painter-color " data-color="#e53430">
-                            <span style="background: #e53430;"></span>
-                        </div>
-                        <div class="painter-color " data-color="#5cdbd2">
-                            <span style="background: #5cdbd2;"></span>
-                        </div>
-                        <div class="painter-color " data-color="#fd7267">
-                            <span style="background: #fd7267;"></span>
-                        </div>
-                        <div class="painter-color " data-color="#fcca7a">
-                            <span style="background: #fcca7a;"></span>
-                        </div>
-                        <div class="painter-color " data-color="#15914b">
-                            <span style="background: #15914b;"></span>
-                        </div>
-                        <div class="painter-color " data-color="#588fe9">
-                            <span style="background: #588fe9;"></span>
-                        </div>
-                        <div class="painter-color " data-color="#6e154e">
-                            <span style="background: #6e154e;"></span>
-                        </div>
-                        <div class="painter-color " data-color="#e53430">
-                            <span style="background: #e53430;"></span>
-                        </div>
-                        <div class="painter-color " data-color="#5cdbd2">
-                            <span style="background: #5cdbd2;"></span>
-                        </div>
-                        <div class="painter-color " data-color="#fd7267">
-                            <span style="background: #fd7267;"></span>
-                        </div>
-                        <div class="painter-color " data-color="#fcca7a">
-                            <span style="background: #fcca7a;"></span>
-                        </div>
-                        <div class="painter-color " data-color="#e53430">
-                            <span style="background: #e53430;"></span>
-                        </div>
-                        <div class="painter-color " data-color="#5cdbd2">
-                            <span style="background: #5cdbd2;"></span>
-                        </div>
-                        <div class="painter-color " data-color="#fd7267">
-                            <span style="background: #fd7267;"></span>
-                        </div>
-                        <div class="painter-color " data-color="#fcca7a">
-                            <span style="background: #fcca7a;"></span>
-                        </div>
-                    </div>
                     <div class="control-group">
-                        <div class="painter-title">
-                            Выберите размер кисти
-                        </div>
                         <div class="painter-control">
+                            <button class="painter-button painter-color painter-color-button link" data-color="#fafafa">
+                                <span class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59.71 50" width="14px" height="24px" style="padding-top: 10px;">
+                                        <path d="M55.76,27.69a6.61,6.61,0,0,0,0-9.33L39.34,1.93a6.61,6.61,0,0,0-9.33,0L13.46,18.47,39.22,44.23Zm0,0"></path>
+                                        <path d="M58,46.5H36.54L11,20.94,1.93,30a6.61,6.61,0,0,0,0,9.33L12.08,49.49a1.75,1.75,0,0,0,1.24.51H58a1.75,1.75,0,1,0,0-3.5Zm0,0"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <span style="margin-top: 20px;">Ластик</span>
                             <div class="painter-size is-active" data-size="10">
-                                <span style="background: #15914b;width: 10px;height: 10px;"></span>
+                                <span style="background: #a0001c;width: 10px;height: 10px;"></span>
                             </div>
                             <div class="painter-size " data-size="20">
-                                <span style="background: #15914b;width: 20px;height: 20px;"></span>
+                                <span style="background: #a0001c;width: 20px;height: 20px;"></span>
                             </div>
                             <div class="painter-size " data-size="30">
-                                <span style="background: #15914b;width: 30px;height: 30px;"></span>
+                                <span style="background: #a0001c;width: 30px;height: 30px;"></span>
                             </div>
                             <div class="painter-size " data-size="40">
-                                <span style="background: #15914b;width: 40px;height: 40px;"></span>
+                                <span style="background: #a0001c;width: 40px;height: 40px;"></span>
                             </div>
-                        </div>
-                        <div class="painter-title">
-                            Прозрачность
-                        </div>
-                        <div class="painter-control group-range">
-                            <div class="painter-size painter-size-opacity">
-                                <span style="
-                                    width: 30px;
-                                    height: 30px;
-                                    background: #15914b;
-                                    opacity: 0.9;">
-                                </span>
-                            </div>
-                            <span class="range-value"></span>
-                            <input type="range" data-opacity="" min="0" max="100" step="5" value="90">
                         </div>
                     </div>
-                    <div class="painter-control hidden">
+                    <div class="group-range hidden">
+                        <div class="painter-size painter-size-opacity">
+                            <span style="
+                                width: 30px;
+                                height: 30px;
+                                background: #a0001c;
+                                opacity: 0.9;">
+                            </span>
+                        </div>
+                        <span class="range-value"></span>
+                        <input type="range" data-opacity="" min="0" max="100" step="5" value="90">
+                    </div>
+                    <div class="hidden">
                         <canvas class="brush-preview" id="brush-preview" width="102px" height="102px"></canvas>
                     </div>
                 </div>
                 <div class="painter-plot" id="painter-wrap">
                     <div class="painter-cursor" style="
-                          background-color : #15914b,
+                          background-color : #a0001c,
                           width: 10px,
                           height: 10px,
                           opacity: 0.9;">
@@ -204,31 +127,90 @@
                     <canvas class="outline-canvas" id="outline"></canvas>
                     <canvas class="hidden" id="save-image"></canvas>
                 </div>
+                <div class="painter-colors">
+                    <!-- <div class="painter-title">
+                        Выбери цвет
+                    </div> -->
+                    <div class="painter-control">
+                        <div class="painter-color " data-color="#3940f0">
+                            <span style="background: #3940f0;"></span>
+                        </div>
+                        <div class="painter-color " data-color="#286acb">
+                            <span style="background: #286acb;"></span>
+                        </div>
+                        <div class="painter-color " data-color="#5d00ef">
+                            <span style="background: #5d00ef;"></span>
+                        </div>
+                        <div class="painter-color " data-color="#de8aae">
+                            <span style="background: #de8aae;"></span>
+                        </div>
+                        <div class="painter-color " data-color="#a900ef">
+                            <span style="background: #a900ef;"></span>
+                        </div>
+                        <div class="painter-color " data-color="#bb00d5">
+                            <span style="background: #bb00d5;"></span>
+                        </div>
+                        <div class="painter-color " data-color="#ee3652">
+                            <span style="background: #ee3652;"></span>
+                        </div>
+                        <div class="painter-color " data-color="#e90101">
+                            <span style="background: #e90101;"></span>
+                        </div>
+                        <div class="painter-color is-active" data-color="#a0001c">
+                            <span style="background: #a0001c;"></span>
+                        </div>
+                    </div>
+                    <div class="painter-control">
+                        <div class="painter-color " data-color="#b97e06">
+                            <span style="background: #b97e06;"></span>
+                        </div>
+                        <div class="painter-color " data-color="#edbe2a">
+                            <span style="background: #edbe2a;"></span>
+                        </div>
+                        <div class="painter-color " data-color="#efe73e">
+                            <span style="background: #efe73e;"></span>
+                        </div>
+                        <div class="painter-color " data-color="#ffffa7">
+                            <span style="background: #ffffa7;"></span>
+                        </div>
+                        <div class="painter-color " data-color="#3cd07c">
+                            <span style="background: #3cd07c;"></span>
+                        </div>
+                        <div class="painter-color " data-color="#41d8b7">
+                            <span style="background: #41d8b7;"></span>
+                        </div>
+                        <div class="painter-color " data-color="#97d1dc">
+                            <span style="background: #97d1dc;"></span>
+                        </div>
+                        <div class="painter-color " data-color="#64b3da">
+                            <span style="background: #64b3da;"></span>
+                        </div>
+                        <div class="painter-color " data-color="#e9f2df">
+                            <span style="background: #e9f2df;"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container third-step pt-50 hidden">
             <div class="row">
                 <div class="col-2">
-                    <p class="titleH2">Шаг 3</p>
-                </div>
-                <div class="col-8">
-                    <a href="javascript:;" class="go-second-step link">
-                        <span class="icon-in-circle">
-                            <img src="./img/back.svg" alt="">
-                        </span>
-                        Вернуться к редактированию
+                    <a href="javascript:;" class="button-inverse go-second-step link">
+                        Назад
                     </a>
                 </div>
-                <div class="col-2 text-right"></div>
+                <div class="col-8">
+                </div>
+                <div class="col-2 text-right">
+                    <button class="button" data-download="">Скачать эскиз</button>
+                </div>
             </div>
             <div class="row pt-50">
-                <div class="col-7">
+                <div class="col-1"></div>
+                <div class="col-10">
                     <img src="http://#/" alt="" class="result-image">
                 </div>
                 <div class="col-1"></div>
-                <div class="col-4">
-                    <button class="button" data-download="">Скачать эскиз</button>
-                </div>
             </div>
         </div>
     </div>

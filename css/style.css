@@ -123,17 +123,34 @@
     font-size: 0.8125em;
     color: #fff;
     font-family: "Gilroy-Regular";
-    border: 1px solid #fd7267;
-    background-color: #fd7267;
+    border: 1px solid #3575f1;
+    background-color: #3575f1;
     border-radius: 35px;    
     padding: 10px 40px;
     cursor: pointer;
     transition: all 0.2s linear;
 }
 .button:hover {
-    color: #fd7267;
+    color: #3575f1;
     background-color: #fff;
 }
+
+.button-inverse {
+    font-size: 0.8125em;
+    font-family: "Gilroy-Regular";
+    color: #3575f1;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 35px;    
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+/*.button-inverse:hover {
+    color: #fff;
+    background-color: #3575f1;
+}*/
+
 .text {
     font-size: 0.9375em;
     line-height: 1.7em;
