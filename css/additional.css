@@ -134,9 +134,20 @@
     cursor: default;
 }
 
-.painter-control .painter-color span {
+.painter-control .painter-color.is-active::after {
+    content: ' ';
+    background-color: white;
+    height: 24px;
     width: 24px;
-    height: 36px;
+    border-radius: 100%;
+    position: absolute;
+    display: inline-block;
+    transform: translate(8px, -42px);
+}
+
+.painter-control .painter-color span {
+    width: 40px;
+    height: 60px;
     cursor: pointer;
     display: block;
 }
@@ -187,8 +198,8 @@
 .painter-colors {
     display: flex;
     align-items: flex-start;
-    -ms-flex: 0 0 70px;
-    flex: 0 0 70px;
+    -ms-flex: 0 0 120px;
+    flex: 0 0 120px;
     max-width: 200px;
     justify-content: space-evenly;
 }
